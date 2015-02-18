@@ -1,0 +1,9 @@
+Server=lalalala
+Hostname=HOSTNAME
+StartAgents=5
+DebugLevel=3
+PidFile=c:\temp\zabbix_agentd.pid
+LogFile=c:\temp\zabbix_agentd.log
+Timeout=3
+EnableRemoteCommands=1
+LogRemoteCommands=1
