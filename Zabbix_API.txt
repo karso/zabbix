@@ -1,9 +1,9 @@
 1.	Write a auth.json file to extract auth key from the server (sample auth.json attached). You need to supply your FrontEnd user creds.
 2.	Post it against the server.
-	curl -X POST -H "Accept: application/json-rpc" -H "Content-Type: application/json-rpc" "http://apollo.kaybus.net/zabbix/api_jsonrpc.php" -d @auth.json
+	curl -X POST -H "Accept: application/json-rpc" -H "Content-Type: application/json-rpc" "http://apollo.mysite.net/zabbix/api_jsonrpc.php" -d @auth.json
 3.	The result of the above command will contain the auth key.
 4.	Use that auth key with any other API call to validate the request like history.get (sample hist.json attached).
-5.	Use the "host" and "key_" params with item.get to get the itemid of a particular host's key (eg system.cpu.load[percpu,avg15] for test-solrcloud-02.kaybus.com)
+5.	Use the "host" and "key_" params with item.get to get the itemid of a particular host's key (eg system.cpu.load[percpu,avg15] for test-solrcloud-02.mysite.com)
 6.	Use the itemids obtained along with history.get.
 
 
